@@ -14,6 +14,7 @@ menuCloseButton.addEventListener("click", () =>
 //Initialize Swiper
 const swiper = new Swiper('.slider-wrapper', {
     loop: true,
+    grapCursor:true,
     spaceBetween:25,
   
     // If we need pagination

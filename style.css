@@ -348,6 +348,11 @@ header .navbar {
     align-items: center;
     text-align: center;
 }
+.testimonials-section .slider-wrapper {
+    overflow: hidden;
+    margin: 0 60px 50px;
+}
+
 
 .testimonials-section .testimonial .user-image {
     width: 180px;
@@ -373,6 +378,7 @@ header .navbar {
 }
 
 .testimonials-section .swiper-slides-button {
+    margin-top: -50px;
     color:var(--secondary-color);
     transition: 0.3s ease;
 }
@@ -513,5 +519,13 @@ header .navbar {
 
     .menu-section .menu-list .menu-item {
         width: 100%;
+    }
+
+    .testimonials-section .swiper-slides-button {
+        display: none;
+    }
+
+    .testimonials-section .slider-wrapper {
+        margin: 0 0 30px;
     }
 }
