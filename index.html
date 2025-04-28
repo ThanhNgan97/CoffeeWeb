@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee Website </title>
+
+    <!--Linking font Awersome for icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!--Linking Swiper Css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -163,8 +169,85 @@
                 </ul>
             </div>
         </section>
+
+        <!--Testimonials section-->
+        <section class="testimonials-section">
+            <h2 class="section-title">Testimonials</h2>
+            <div class="section-content">
+                <div class="slider-container swiper">
+                    <div class="slider-wrapper">
+
+                        <ul class="testimonials-list swiper-wrapper">
+                            <li class = "testimonial swiper-slide">
+                                <img src="images/HaiDang.png" alt="User" class="user-image">
+                                <h3 class="name">Hai Đang</h3>
+                                <i class="feedback">Loved the French roast. 
+                                    Perfectly balanced and rich. 
+                                    Will order again!"
+                                </i>
+                            </li>
+
+                            <li class = "testimonial swiper-slide">
+                                <img src="images/ceo_apple.png" alt="User" class="user-image">
+                                <h3 class="name">Tim Cook - CEO Apple</h3>
+                                <i class="feedback">Tim Cook is not only an excellent successor to Steve Jobs' legacy, 
+                                    but also a visionary leader with a focus on sustainability, user privacy, 
+                                    and a diverse, inclusive corporate culture."
+                                </i>
+                            </li>
+
+                            <li class = "testimonial swiper-slide">
+                                <img src="images/ceo_facebook.png" alt="User" class="user-image">
+                                <h3 class="name">Mark Zuckerberg - CEO Facebook</h3>
+                                <i class="feedback">With a vision of a more connected world, 
+                                    Mark Zuckerberg has led Facebook through many important milestones, 
+                                    including expanding into areas like virtual reality with Meta.
+                                </i>
+                            </li>
+
+                            <li class = "testimonial swiper-slide">
+                                <img src="images/ceo_google.png" alt="User" class="user-image">
+                                <h3 class="name">Sundar Pichai - CEO Google</h3>
+                                <i class="feedback">Under Sundar Pichai's leadership, 
+                                    Google continues to innovate in areas such as artificial intelligence, 
+                                    cloud computing, and advanced search technologies.
+                                </i>
+                            </li>
+
+                            <li class = "testimonial swiper-slide">
+                                <img src="images/ceo_instagram.png" alt="User" class="user-image">
+                                <h3 class="name">Adam Mosseri - CEO Instagram</h3>
+                                <i class="feedback">Adam Mosseri took over the helm of Instagram in 2018 
+                                    and has been instrumental in shaping the platform's growth,
+                                    especially amid competition from other apps.
+                                </i>
+                            </li>
+
+                            <li class = "testimonial swiper-slide">
+                                <img src="images/ceo_Mercedes-Benz.png" alt="User" class="user-image">
+                                <h3 class="name">Ola Källenius - CEO Mercedes-Benz</h3>
+                                <i class="feedback">Ola Källenius, who has Swedish and German citizenship, 
+                                    joined Daimler AG (now Mercedes-Benz Group AG) in 1993 and officially became CEO in 2019.
+                                </i>
+                            </li>
+                        </ul>
+
+                        <div class="swiper-pagination"></div>
+
+                        <div class="swiper-slides-button swiper-button-prev"></div>
+                        <div class="swiper-slides-button swiper-button-next"></div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
+    <!--linking Swiper Script-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+    <!--linking custom Script-->
     <script src="script.js"></script>
     
 </body>
