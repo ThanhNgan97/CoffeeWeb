@@ -387,6 +387,48 @@ header .navbar {
     color: var(--primary-color);
 }
 
+/*Gallery section*/
+.gallery-section {
+    padding: 50px 0 100px;
+    background: #e5f8e5;
+}
+
+.gallery-section .gallery-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.gallery-section .section-content {
+    width: 100%;
+}
+
+/*phân chia hình ảnh thành 3 cột*/
+.gallery-section .gallery-list .gallery-item {
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px; */
+    overflow: hidden;
+    border-radius: var(--border-radius-s);
+    width: calc((100% - 64px) / 3);
+    transition: 0.3s ease;
+
+}
+
+.gallery-section .gallery-list {
+    gap: 30px;
+}
+
+.gallery-section .gallery-item .gallery-image {
+    width: 100%;
+    height: 100%;
+    cursor: zoom-in;
+}
+
+.gallery-section .gallery-item:hover .gallery-image {
+    transform: scale(1.3);
+}
+
 /*Responsive 1024*/
 @media screen and (max-width: 1024px) {
 
@@ -508,6 +550,10 @@ header .navbar {
     .menu-section .menu-list .menu-item .menu-image {
         max-width: 200px;
     } 
+
+    .gallery-section .gallery-list .gallery-item {
+        width: calc(100% / 2 - 30px);
+    }    
 }
 
 /*Responsive 640*/
@@ -517,7 +563,9 @@ header .navbar {
         gap: 60px;
     }
 
-    .menu-section .menu-list .menu-item {
+    .menu-section .menu-list .menu-item,
+    .gallery-section .gallery-list .gallery-item
+    {
         width: 100%;
     }
 
